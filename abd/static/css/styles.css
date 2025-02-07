@@ -1,0 +1,60 @@
+/* styles.css */
+
+/* إعدادات الخط والخلفية */
+body {
+    background: linear-gradient(135deg, #f0f8ff, #e6e6fa);
+    font-family: 'Tajawal', sans-serif;
+}
+
+/* تصميم البطاقة */
+.card {
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+}
+
+/* تأثيرات الصورة */
+.card img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* تصميم الأزرار */
+.btn-secondary {
+    background-color: #6c63ff;
+    border-color: #6c63ff;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #5848e1;
+    border-color: #5848e1;
+    box-shadow: 0 4px 15px rgba(108, 99, 255, 0.4);
+}
+
+/* تنسيق النصوص */
+h2, h3 {
+    color: #333;
+}
+
+p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* تأثير الأنيميشن */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
